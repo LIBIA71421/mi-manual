@@ -4,50 +4,314 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Manual HTML</title>
 </head>
+
 <body>
-    <h1>RECURSOS PARA DESARROLLADORES</h1>
+    <center>
+    <h1> Mi Manual</h1>
+    <p>Manual sobre <span class = "italic">HTML</span></p>
+    <h2>RECURSOS PARA DESARROLLADORES:</h2>
+    <p>Documentacion de las paginas web utilizidas como guia para el desarrollo de nuestras paginas html</p>
+    
     <table>
         <thead>
             <tr>
-                <th>Nombre</th>
+                <th>Pagina</th>
                 <th>Descripcion</th>
                 <th>Enlace</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>MDN</td>
-                <td>
-                    Documentacion sobre css, html, JavaScript y APIS web.
-                </td>
-                <td><a href="https://developer.mozilla.org/es/" target="_blank">Ir a pagina</a></td>
+                <td>Mozilla Dev Network</td>
+                <td>Documentacion sobre elementos, atributos y tipos de &lt;input&gt; de <span class = "italic">HTML</span></td>
+                <td><a href="https://developer.mozilla.org/es/" target="_blank">pagina MDN</a></td>
             </tr>
             <tr>
-                <td>HTML STANDARD</td>
-                <td>Especificacion de HTML</td>
-                <td><a href="https://html.spec.whatwg.org/" target="_blank">Ir a pagina</a></td>
+                <td>HTML SPEC</td>
+                <td>Guia de especificaciones estandar <em>HTML</em></td>
+                <td><a href="https://html.spec.whatwg.org" target="_blank">Estandar HTML</a></td>
+            </tr>
+            <tr>
+                <td>Markup Validation<br> Service</td>
+                <td>Para revisar errores de sintaxis del HTML.<br>Puede verificar links URL, archivos cargados o escritura directa</td>
+                <td><a href="https://validator.w3.org" target="_blank">Validador HTML</a></td>
             </tr>
         </tbody>
     </table>
-    <hr>
-    <h1>ELEMENTOS HTML</h1>
-    <table>
+
+
+    <h2>ELEMENTOS HTML</h2>
+    <h3 class = "subtitle">Elementos genericos:</h3>
+    <p class = "subtitle">Son los elementos que ayudan a estructurar contenido <em>HTML</em></p>
+<table>
         <thead>
             <tr>
                 <th>Elemento</th>
-                <th>Descripciòn</th>
-                <th>Documentaciòn</th>
+                <th>Descripcion</th>
+                <th>Documentacion</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>html</td>
-                <td>Representa la raiz del documento HTML</td>
-                <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html" target="_blank">Documentacion</a></td>
+                <td><code>&ltdiv&gt</code></td>
+                <td>Crea secciones o agrupa contenido</td>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div" target="_blank">Div</a></a></td>
             </tr>
-        </tbody>        
+            <tr>
+                <td><code>&ltspan&gt</code></td>
+                <td>Sirve para aplicar estilo al texto</td>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span" target="_blank">Span</a></a></td>
+            </tr>
+        </tbody>    
     </table>
+
+    <h3 class = "subtitle">Elementos semanticos:</h3>
+    <p class = "subtitle">Son los elementos que indican su contenido y ayudan a leer y entender el codigo <em>HTML</em></p>
+
+        <table> 
+            <thead>
+                <tr>    
+                    <th>Elemento </th>
+                    <th>Descripcion </th>
+                    <th>Enlace </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class = "element">&lt;html&gt;</td>
+                    <td>Representa la raiz del documento HTML </td>
+                    <td><a href = "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html" target="_blank">html</a></td>
+                </tr>
+                
+                <tr>
+                    <td class = "element">&lt;head&gt;</td>
+                    <td>Contiene la informacion de cabecera(metadata)</td>
+                    <td><a href = "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head" target = "_blank">head</a></td>
+                </tr>
+
+                <tr>
+                    <td class = "element">&lt;body&gt;</td>
+                    <td>Representa el contenido visible del html</td>
+                    <td><a href = "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body" target = "_blank">body</a></td>
+                </tr>
+
+                <tr>
+                    <td class = "element">&lt;header&gt;</td>
+                    <td>Describe el conenido de la cabecera <br> (NO CONFUNDIR CON HEAD)</td>
+                    <td><a href = "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header" target = "_blank">header</a></td>
+                </tr>
+
+                <tr>
+                    <td class = "element">&lt;aside&gt;</td>
+                    <td>Contenido que esta relacionado indirectamente al contenido principal</td>
+                    <td><a href = "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside" target = "_blank">aside</a></td>
+                </tr>
+
+                <tr>
+                    <td class = "element">&lt;footer&gt;</td>
+                    <td>Pie de pagina para el elemento body o el ancestro de la categoria SECTIONING</td>
+                    <td><a href = "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer" target = "_blank">footer</a></td>
+                </tr>
+
+                <tr>
+                    <td class = "element">&lt;main&gt;</td>
+                    <td>Contenido dominante del body</td>
+                    <td><a href = "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main" target = "_blank">main</a></td>
+                </tr>
+
+                <tr>
+                    <td class = "element">&lt;nav&gt;</td>
+                    <td>Representa a los enlanes de navegación.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav" target="_blank">nav</a></td>
+                </tr>
+
+                <tr>
+                    <td class = "element">&lt;section&gt;</td>
+                    <td>Indica contenido de un tema en especifico.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section" target="_blank">section</a></td>
+                </tr>
+
+                <tr>
+                    <td class = "element">&lt;article&gt;</td>
+                    <td>Contenico independiente de la pagina.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article" target="_blank">article</a></td>
+                </tr>
+
+            </tbody>
+
+        </table>
+    
+        <h3 class = "subtitle">Manejo de texto: </h3>
+        <p class = "subtitle">Son los elementos que nos permiten estructurar nuestro texto.</p>
+
+        <table>
+            <thead>
+                <tr>    
+                    <th>Elemento </th>
+                    <th>Descripcion</th>
+                    <th>Link </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class = "element">&lt;h1&gt; - &lt;h6&gt;</td>
+                    <td>Niveles de encabezados que van del &lt;h1&gt; el más grande hasta el &lt;h6&gt; el más pequeño</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements" target="_blank">heading</a></td>
+                </tr>
+
+                <tr>
+                    <td class = "element">&lt;p&gt;</td>
+                    <td>Se utilizan para dividir un texto largo en bloques de texto más pequeños.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p" target="_blank">p</a></td>
+                </tr>
+
+                <tr>
+                    <td class = "element">&lt;br&gt;</td>
+                    <td>Salto de linea, avanza a la siguiente linea</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/br" target="_blank">br</a></td>
+                </tr>
+
+                <tr>
+                    <td class = "element">&lt;hr&gt;</td>
+                    <td>Transicion entre parrafos a un tema separado pero relacionado</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr" target="_blank">hr</a></td>
+                </tr>
+
+                <tr>
+                    <td class = "element">&lt;wbr&gt;</td>
+                    <td>Oportunidad de romper la palabra para continuar en la siguiente linea</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/wbr" target="_blank">wbr</a></td>
+                </tr>
+                
+                <tr>
+                    <td class = "element">&lt;sup&gt;</td>
+                    <td>Indica superindices, mostrar exponentes, abreviaciones, numeros ordinales</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sup" target="_blank">sup</a></td>
+                </tr>
+
+                <tr>
+                    <td class = "element">&lt;sub&gt;</td>
+                    <td>Indica subindices para formulas matematica, formulas quimicas, etc.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sub" target="_blank">sub</a></td>
+                </tr>
+
+                <tr>
+                    <td class = "element">&lt;strong&gt;</td>
+                    <td>Contenido de gran importancia. Muestra su contenido en negrita</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong" target="_blank">strong</a></td>
+                </tr>
+
+                <tr>
+                    <td class = "element">&lt;em&gt;</td>
+                    <td>Denotar enfasis en un bloque de texto. El navegador lo muestra en cursiva.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em" target="_blank">em</a></td>
+                </tr>
+
+                <tr>
+                    <td class = "element">&lt;mark&gt;</td>
+                    <td>Resalta texto de interes.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark" target="_blank">mark</a></td>
+                </tr>
+
+                <tr>
+                    <td class = "element">&lt;q&gt;</td>
+                    <td>Cita corta en linea que usualmente es mostrada con el uso de comillas.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q" target="_blank">q</a></td>
+                </tr>
+
+                <tr>
+                    <td class = "element">&lt;blockquote&gt;</td>
+                    <td>Cita en bloque cuyo contenido es una cita extensa.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote" target="_blank">blockquote</a></td>
+                </tr>
+
+                <tr>
+                    <td class = "element">&lt;cite&gt;</td>
+                    <td>Permite incluir el nombre de una cita commo un libro, ensayo, etc.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/cite" target="_blank">cite</a></td>
+                </tr>
+
+                <tr>
+                    <td class = "element">&lt;dfn&gt;</td>
+                    <td>Termino a definir del parrafo</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dfn" target="_blank">dfn</a></td>
+                </tr>
+
+                <tr>
+                    <td class = "element">&lt;abbr&gt;</td>
+                    <td>Se utiliza para identificar una abreviatura</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr" target="_blank">abbr</a></td>
+                </tr>
+
+                <tr>
+                    <td class = "element">&lt;small&gt;</td>
+                    <td>Permite definir la letra chica y comentarios de una pagina</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/small" target="_blank">small</a></td>
+                </tr>
+
+                <tr>
+                    <td class = "element">&lt;ins&gt;</td>
+                    <td>Marca todas las partes del texto que han sido añadidos al documento.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ins" target="_blank">ins</a></td>
+                </tr>
+
+                <tr>
+                    <td class = "element">&lt;del&gt;</td>
+                    <td>Marca todas las partes del texto que han sido eliminadas del documento.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/del" target="_blank">del</a></td>
+                </tr>
+
+                <tr>
+                    <td class = "element">&lt;s&gt;</td>
+                    <td>Muestra el texto tachandolo con una linea.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/s" target="_blank">s</a></td>
+                </tr>
+
+                <tr>
+                    <td class = "element">&lt;code&gt;</td>
+                    <td>Muestra el texto con formato de fragmento de codigo.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code" target="_blank">code</a></td>
+                </tr>
+
+                <tr>
+                    <td class = "element">&lt;samp&gt;</td>
+                    <td>Representa la salida de un programa.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/samp" target="_blank">samp</a></td>
+                </tr>
+
+                <tr>
+                    <td class = "element">&lt;kbd&gt;</td>
+                    <td>Fragmento de texto que indica la entrada del usuario en el teclado.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kbd" target="_blank">kbd</a></td>
+                </tr>
+
+                <tr>
+                    <td class = "element">&lt;pre&gt;</td>
+                    <td>Presentera exactamente como fue escrito en el archivo HTML.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre" target="_blank">pre</a></td>
+                </tr>
+
+                <tr>
+                    <td class = "element">&lt;address&gt;</td>
+                    <td>Informacion de contacto para una persona u organizacion.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/address" target="_blank">address</a></td>
+                </tr>
+
+                <tr>
+                    <td class = "element">caracteres<br>especiales</td>
+                    <td>Nos da la oportunidad de ingresar caracteres especiales como ser "&lt;", "&gt;", "&amp;", etc.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Glossary/Entity" target="_blank">lista</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </center>
+    <address>
+        <p id ="autor">Autor: Libia Nataly Roman Arevalo</p>
+        <a id = "autor" href = "mailto:libia.roman@ucb.edu.bo">libia.roman@ucb.edu.bo</a>
+    </address>
 </body>
 </html>
+
