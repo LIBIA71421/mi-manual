@@ -1,0 +1,96 @@
+
+body{
+    background-color: rgba(236, 224, 241, 0.527);
+    color: rgb(0, 0, 0);
+}
+thead{
+    background-color: #bdc7e7;;
+    color: black
+}
+a{
+    color:rgb(0, 0, 0);
+}
+td{
+    height: 2em; 
+    font-size: 120%;
+}
+th{
+    font-size: 120%;
+}
+table, td, th{
+    border: 2px white solid;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+table tr:hover {
+    background-color: rgba(207, 173, 230, 0.438);
+    cursor: pointer;
+}
+.element{
+    text-align: center;
+    width: 10%;
+}
+.italic{
+    font-style: italic;
+}
+#autor{
+    display: flex;
+    justify-content: center;
+    font-size: 120%;
+}
+.subtitle{
+    text-indent: 2.5%;
+}
+header{
+    background: #4f889c3d;
+}
+header h1{
+    text-align: center;
+    color: whitesmoke;
+    line-height: 100px;    
+    font-family: 'Great Vibes', cursive;
+    text-shadow: 22px 10px 4px #4f889ca1;
+    font-size: 400%;
+}
+nav{
+    text-align: center;
+    background:rgba(100, 41, 41, 0.226);
+}
+nav ul li{
+    display: inline-block;
+    padding: 10px
+}
+nav ul li a{
+    text-decoration: none;
+    font-family:serif;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 4px 8px #000000a1;
+}
+nav ul li a:hover{
+    color:black;
+}
+section{
+    margin-top: 15px;
+    background: #4f889c27;
+    margin-block-end: 15px;
+    justify-content: center;            
+    text-align: center;
+}
+footer{
+    margin-top: 15px;
+    clear: both;
+    background: #4f889c3d;
+}
+div{
+    justify-content: center;            
+    display: flex;
+}
+h2{    
+    justify-content: center;            
+    text-align: center;
+}
+p{
+    font-size: 140%;
+}
