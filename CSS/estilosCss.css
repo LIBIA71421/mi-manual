@@ -1,0 +1,12 @@
+rgb{
+    z-index: 5px;
+}
+pre{
+    font-size: large;
+    align-items: center;
+}
+pre b{
+    font-size: x-large;
+    background-color: rgba(245, 245, 245, 0.192);
+    border-radius: 10px;
+}

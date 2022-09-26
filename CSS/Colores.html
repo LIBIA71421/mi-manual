@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/HTML/style.css">
     <link rel="stylesheet" type="text/css" href="\estiloIndex.css">
+    <link rel="stylesheet" type="text/css" href="estilosCss.css">
     <title>COLORES</title>
 </head>
 <body>
@@ -21,6 +22,103 @@
             </ul>
         </nav>
     </header>
+    
+    <h2>Usando Nombre del Color</h2>
+    <section>
+        <p class = "subtitle">Podemos especificar un color usando un nombre predefinido.</p>
+        <a href="https://www.w3.org/TR/css-color-3/#svg-color">Lista_de_Colores</a>
+    </section>
+    
+    <img src="Images/9fc.jpg" alt="" class="rgb">
+
+    <h2>Modelo RGB</h2>
+    <section>
+        <p class = "subtitle">Establece el valor de  un color mezclando diferentes intensidades de los tres colores primarios.</p>
+        <h3 class = "subtitle">Funcion RGB</h3>
+        <p class = "subtitle">Defnie  un color como la mezcla de intensidades.</p>
+        <pre>
+            rgb(red, green, blue)
+
+                <b>El parámetro red</b>
+            Especifica la intensidad del  rojo presente en la mezcla
+            Los valores posibles son: [0-255] o [0%-100%]
+
+                <b>El parámetro green</b>
+            Especifica la intensidad del  verde presente en la mezcla
+            Los valores posibles son: [0-255] o [0%-100%]
+
+                <b>El parámetro blue</b>
+            Especifica la intensidad del  azul presente en la mezcla
+            Los valores posibles son: [0-255] o [0%-100%]
+
+        </pre>
+        
+        <h4 class = "subtitle">Opacidad</h4>
+        <pre>
+            <b>El parámetro a</b>
+                Especifica la transparencia
+                Los valores posibles son: [0-1]
+                    0,  significa completamente transparente
+                    1,  significa completamente opaco (no transparente)
+        </pre>
+
+        <img src="Images/RGB.jpg" alt="" class="rgb">
+
+        <h3 class = "subtitle">Hexadecimal</h3>
+        <p>Podemos utilizar un número hexadecimal para definir un color.</p>
+        <pre>
+            #numero_hexadecimal 
+
+            <b>El número hexadecimal</b>
+            Tiene 6 dígitos
+            Los primeros dos dígitos indican el color rojo
+            Los dos dígitos del medio indican el color verde
+            Los dos últimos dígitos indican el color azul 
+        </pre>
+
+        <img src="Images/web-safe-color-chart.png" alt="" class="rgb">
+
+    </section>
+    
+    <h2>Modelo HSL</h2>
+    <section>
+        <p class = "subtitle">Son los elementos que ayudan a estructurar contenido <em>HTML</em></p>
+        <pre>
+        <b>hsl(hue, saturation, lightness)</b>
+
+            <b>El parámetro hue (tono)</b>
+            Es el color
+            Los valores posibles son: [0-360]
+            Podemos obtener los valores de la rueda de colores
+
+        <b>El parámetro saturation (saturación)</b>
+            Determina que tan fuerte o vivo es un color
+            Los valores posibles son: [0%-100%]
+            Donde 100% significa completamente saturado (color muy vivo)
+            Donde 0% significa sin saturación alguna (color apagado)
+
+
+        <b>El parámetro ligthness (Luminosidad)</b>
+            Permite establecer la claridad u oscuridad de un color
+            Los valores posibles son de: [0%-100%]
+            Donde 100% significa completamente blanco (brillantez total)
+            Donde 50% es normal
+            Donde 0% es competamente negro (sin brillantez)
+
+        </pre>
+        <h4 class = "subtitle">Opacidad</h4>
+        <pre>
+            <b>hsla(h,s,l,a)</b>
+
+            <b>El parámetro a</b>
+                Especifica la transparencia
+                Los valores posibles son: [0-1]
+                    0,  significa completamente transparente
+                    1,  significa completamente opaco (no transparente)
+        </pre>
+        <a href="https://hslpicker.com/#32bd00">HSL COLOR PICHER</a>
+        
+    </section>
 
     <footer>
         <address>
@@ -29,7 +127,7 @@
         </address>
     </footer> 
     
-    <script src="code.js"></script>
+    <script src="\code.js"></script>
 
 </body>
 </html>

@@ -25,16 +25,6 @@ table tr:hover {
 table tr{
     background-color: #bdc7e727;
 }
-.element{
-    text-align: center;
-    width: 10%;
-}
-.italic{
-    font-style: italic;
-}
-.subtitle{
-    text-indent: 2.5%;
-}
 
 section{
     margin-top: 1px;
