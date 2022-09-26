@@ -10,3 +10,27 @@ pre b{
     background-color: rgba(245, 245, 245, 0.192);
     border-radius: 10px;
 }
+#contenedorNav{
+    overflow-x: scroll;
+    scrollbar-width: 12px;
+    scrollbar-color: blue rgb(245, 30, 180);
+}
+
+
+
+
+
+.contenedor-flexible{
+    background-color: red;
+    display: flex;
+    justify-self: flex-end;
+}
+.elemento-flexible:nth-child(1){
+    background-color: green;
+}
+.elemento-flexible:nth-child(2){
+    background-color: orange;
+}
+.elemento-flexible:nth-child(3){
+    background-color: blue;
+}
