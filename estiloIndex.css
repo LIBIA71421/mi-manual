@@ -30,7 +30,7 @@ body{
     position:relative;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.4), transparent 10%), url(Images/istock.jpg);
+    background: linear-gradient(rgba(0,0,0,0.4), transparent 30%), url(Images/istock.jpg);
     background-size:cover;
     background-position: center center;
 }
