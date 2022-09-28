@@ -6,35 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="estiloIndex.css">
+    <link rel="stylesheet" type="text/css" href="estilosCss.css">
     <title>FLEXBOX</title>
 </head>
 <body>
    
     <header><h1> CSS </h1>
-        <nav>
-            <ul class="menuPrincipal">
-                <li class="go"><a href="index.html">MENU</a></li>
-                <li class="go"><a href="Colores.html">COLORES</a></li>
-                <li class="go"><a href="Selectores.html">SELECTORES</a></li>
-                <li class="go"><a href="Modelo de cajas.html">CAJAS</a></li>
-                <li class="go"><a href="Flexbox.html">FLEXBOX</a></li>
-                <li class="go"><a href="RecursoDesarrolladores.html">DESARROLLADOR</a></li>
-            </ul>
-        </nav>
+        <div id="contenedorNav">
+            <nav id="contendidoNav">
+                <ul class="menuPrincipal">
+                    <li class="go"><a href="index.html">MENU</a></li>
+                    <li class="go"><a href="Colores.html">COLORES</a></li>
+                    <li class="go"><a href="Selectores.html">SELECTORES</a></li>
+                    <li class="go"><a href="Modelo de cajas.html">CAJAS</a></li>
+                    <li class="go"><a href="Flexbox.html">FLEXBOX</a></li>
+                    <li class="go"><a href="RecursoDesarrolladores.html">DESARROLLADOR</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <h2>ELEMENTOS HTML</h2>
     <section>
-        <h3 class = "subtitle">Elementos genericos:</h3>
-        <p class = "subtitle">Son los elementos que ayudan a estructurar contenido <em>HTML</em></p>
+        <h2 class = "subtitle">FLEXBOX</h2>
+        <p class = "subtitle">Para que nuestros sitios se llenen de colores, necesitamos un manera de establecer los valores de estos colores. Existen tres formatos que podemos usar:</p>
     </section>
     
-    <div class="contenedor-flexible">
-        <div class="elemento-Flexible"> DATO 1 </div>
-        <div class="elemento-Flexible"> DATO 2 </div>
-        <div class="elemento-Flexible"> DATO 3 </div>
-    </div>
-
+    <table> 
+        <thead>
+            <tr>    
+                <th> justify-content </th>
+                <th>Descripcion </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class = "element"><b>flex-start</b></td>
+                <td>- No existe distancia entre el lado inicial del eje principal y su elemento adyacente.
+                    <br> - No existe distancia entre los elementos contiguos de una línea
+                    <br> - Si el contenedor flexible es de una sola línea y es demasiado pequeño para contener 
+                    <br> todos los elementos, los elementos flexibles se desbordan en dirección del eje principal.</td>
+            </tr>
+           
+            <tr>
+                <td class = "element"><b>flex-end</b></td>
+                <td>- No existe distancia entre el lado final del eje principal y su elemento adyacente.
+                    <br> - No existe distancia entre los elementos contiguos de una línea.
+                    <br> - Si el contenedor flexible es de una sola linea y es demasiado pequeño para contener 
+                    <br> todos los elementos, los elementos flexibles se desbordan en dirección contraria del eje principal.</td>
+            </tr>
+           
+            <tr>
+                <td class = "element"><b>center</b></td>
+                <td>- No existe espacio entre los elementos adyacentes de una línea.
+                    <br> - La distancia entre los lados del eje principal y sus elementos adyacentes es la misma.
+                    <br> - Si el contenedor flexible es de una sola línea y es demasiado pequeño para contener 
+                    <br> todos los elementos, los elementos flexibles se desbordan por igual en ambas direcciones.</td>
+            </tr>
+           
+            <tr>
+                <td class = "element"><b>space-between</b></td>
+                <td>- No existe espacio entre los lados del eje principal y sus elementos adyacentes.
+                    <br> - La distancia entre los elementos adyacentes de una linea es la misma.
+                    <br> - Si solo existe un elemento flexible en la línea, este se coloca pegado al lado inicial del eje principal.
+                    <br> - Si el contenedor flexible es de una sola línea y es demasiado pequeño para contener todos los elementos, los elementos flexibles se desbordan en dirección del eje principal.</td>
+            </tr>
+           
+            <tr>
+                <td class = "element"><b>space-around</b></td>
+                <td>- La distancia entre elementos adyacentes de una línea es la misma.
+                    <br> - La distancia entre los lados del eje principal y sus elementos adyacentes es la mitad de la distancia que existe entre elementos adyacentes.
+                    <br> - Si solo existe un elemento flexible en la línea, este se coloca al medio.
+                    <br> - Si el contenedor flexible es demasiado pequeño para contener todos los elementos y es de una sola linea, los elementos flexibles se desbordan por igual en ambas direcciones.</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <img src="/Images/flexbox.png" width="90%">
+    
     <footer>
         <address>
             <p id ="autor">Autor: Libia Nataly Roman Arevalo</p>
