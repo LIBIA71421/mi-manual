@@ -6,28 +6,158 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="estiloIndex.css">
+    <link rel="stylesheet" type="text/css" href="estilosCss.css">
     <title>SELECTORES</title>
 </head>
 <body>
     <header><h1> CSS </h1>
-        <nav>
-            <ul class="menuPrincipal">
-                <li class="go"><a href="index.html">MENU</a></li>
-                <li class="go"><a href="Colores.html">COLORES</a></li>
-                <li class="go"><a href="Selectores.html">SELECTORES</a></li>
-                <li class="go"><a href="Modelo de cajas.html">CAJAS</a></li>
-                <li class="go"><a href="Flexbox.html">FLEXBOX</a></li>
-                <li class="go"><a href="RecursoDesarrolladores.html">DESARROLLADOR</a></li>
-            </ul>
-        </nav>
+        <div id="contenedorNav">
+            <nav id="contendidoNav">
+                <ul class="menuPrincipal">
+                    <li class="go"><a href="index.html">MENU</a></li>
+                    <li class="go"><a href="Colores.html">COLORES</a></li>
+                    <li class="go"><a href="Selectores.html">SELECTORES</a></li>
+                    <li class="go"><a href="Modelo de cajas.html">CAJAS</a></li>
+                    <li class="go"><a href="Flexbox.html">FLEXBOX</a></li>
+                    <li class="go"><a href="RecursoDesarrolladores.html">DESARROLLADOR</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     
-    <h2>ELEMENTOS HTML</h2>
     <section>
-        <h3 class = "subtitle">Elementos genericos:</h3>
-        <p class = "subtitle">Son los elementos que ayudan a estructurar contenido <em>HTML</em></p>
+        <h2 class = "subtitle">SELECTORES CSS:</h2>
+        <p class = "subtitle">Permiten seleccionar elementos del documento a los que queremos aplicar estilos.</p>
     </section>
+    
+    <table> 
+        <thead>
+            <tr>    
+                <th>Elemento </th>
+                <th>Descripcion </th>
+                <th>Sintaxis </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class = "element">Selector universal (*)</td>
+                <td>Selecciona todos los elementos. </td>
+                <td><code> *{ declaraciones CSS } </code></td>
+            </tr>
+           
+            <tr>
+                <td class = "element">Selector de Tipo</td>
+                <td>Selecciona elementos usando el nombre del elemento</td>
+                <td><code>elemento{ declaraciones; }</code></td>
+            </tr>
 
+            <tr>
+                <td class = "element">Selector de Clase (.foo)</td>
+                <td>Selecciona elementos en función de los valores del atributo class de los elementos. </td>
+                    <td><code> .valor_atributo { declaraciones; } </code></td>
+            </tr>
+
+            <tr>
+                <td class = "element">Selector de ID (#foo)</td>
+                <td>Selecciona un elemento en función del valor del atributo ID del elemento.</td>
+                <td><code> #valor_atributo { declaraciones; } </code></td>
+            </tr>      
+
+        </tbody>
+    </table>
+    
+    <table> 
+        <thead>
+            <tr>    
+                <th>Elemento </th>
+                <th>Descripcion </th>
+                <th>Sintaxis </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class = "element" rowspan="6">Selector de Atributo (a[foo])</td>
+                <td>Selecciona elementos que tengan un atributo con el nombre <b>attr</b></td>
+                <td><code> selector[<b>attr</b>] { … } </code></td>
+            </tr>
+
+            <tr>
+                <td>El <b>único valor</b> del atributo es exactamente <b>value</b></td>
+                <td>selector[<b>attr=value</b>] { … }</td>    
+            </tr>
+
+            <tr>
+                <td>Uno de los valores del atributo es exactamente <b>value</b></td>
+                <td>selector[<b>attr~=value</b>] { … }</td>
+            </tr>
+
+            <tr>
+                <td>El primero de los  valores del atributo empieza con <b>value</b></td>
+                <td>selector[<b>attr ^= value</b>] { … }</td>
+            </tr>
+
+            <tr>
+                <td>El último de los  valores del atributo termina con <b>value</b></td>
+                <td>selector[<b>attr $= value</b>] { … }</td>
+            </tr>
+
+            <tr>
+                <td>Uno de los valores del atributo contiene al menos una ocurrencia de <b>value</b></td>
+                <td>selector[<b>attr *= value</b>] { … } </td>
+            </tr>   
+
+        </tbody>
+    </table>
+    
+    <table> 
+        <thead>
+            <tr>    
+                <th>Elemento </th>
+                <th>Descripcion </th>
+                <th>Sintaxis </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class = "element">Pseudo-Clases</td>
+                <td>Permite seleccionar elementos en base a su estado (:disabled), posicion de los elementos en el documento(:nth-child) e interacción del usuario(:hover)</td>
+                <td><code> button:hover {color: blue;} </code></td>
+            </tr>
+           
+            <tr>
+                <td class = "element">Pseudo-Elementos</td>
+                <td>Los pseudo-elementos se añaden a los selectores y permiten añadir estilos a una parte concreta de los elementos seleccionados</td>
+                <td><code> p::first-line{color: blue;} </code></td>
+            </tr>
+            <tr>
+                <td class = "element">Unión de Selectores</td>
+                <td>Selecciona la unión de los elementos seleccionados por cada selector de la lista</td>
+                    <td><code>Selector-1, Selector-2, … {   }
+                </code></td>
+            </tr>
+            <tr>
+                <td class = "element">Seleccionar Elementos Descendientes</td>
+                <td>Seleccionamos todos los elementos seleccionados por B que son descendientes de los elementos seleccionados por A</td>
+                <td><code>A B {}</code></td>
+            </tr>
+            <tr>
+                <td class = "element">Seleccionar Elementos Hijos</td>
+                <td>Seleccionamos todos los elementos seleccionados por B que son hijos de los elementos seleccionados por  A</td>
+                <td><code>A > B {}</code></td>
+            </tr>
+            <tr>
+                <td class = "element">Seleccionar Elementos Hermanos</td>
+                <td>Seleccionamos todos los elementos seleccionados por B que son hermanos de los elementos seleccionados por A</td>
+                <td><code>A ~ B {}</code></td>
+            </tr>
+            <tr>
+                <td class = "element">Seleccionar Elementos Hermanos Adyacentes</td>
+                <td>Seleccionamos todos los elementos seleccionados por B que son hermanos y que están inmediatamente despues de los elementos seleccionados por A</td>
+                <td><code>A + B {}</code></td>
+            </tr>
+        </tbody>
+    </table>
+    
     <footer>
         <address>
             <p id ="autor">Autor: Libia Nataly Roman Arevalo</p>

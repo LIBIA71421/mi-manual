@@ -6,27 +6,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="estiloIndex.css">
+    <link rel="stylesheet" type="text/css" href="estilosCss.css">
     <title>CAJAS</title>
 </head>
 <body>
     <header><h1> CSS </h1>
-        <nav>
-            <ul class="menuPrincipal">
-                <li class="go"><a href="index.html">MENU</a></li>
-                <li class="go"><a href="Colores.html">COLORES</a></li>
-                <li class="go"><a href="Selectores.html">SELECTORES</a></li>
-                <li class="go"><a href="Modelo de cajas.html">CAJAS</a></li>
-                <li class="go"><a href="Flexbox.html">FLEXBOX</a></li>
-                <li class="go"><a href="RecursoDesarrolladores.html">DESARROLLADOR</a></li>
-            </ul>
-        </nav>
+        <div id="contenedorNav">
+            <nav id="contendidoNav">
+                <ul class="menuPrincipal">
+                    <li class="go"><a href="index.html">MENU</a></li>
+                    <li class="go"><a href="Colores.html">COLORES</a></li>
+                    <li class="go"><a href="Selectores.html">SELECTORES</a></li>
+                    <li class="go"><a href="Modelo de cajas.html">CAJAS</a></li>
+                    <li class="go"><a href="Flexbox.html">FLEXBOX</a></li>
+                    <li class="go"><a href="RecursoDesarrolladores.html">DESARROLLADOR</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     
-    <h2>ELEMENTOS HTML</h2>
     <section>
-        <h3 class = "subtitle">Elementos genericos:</h3>
-        <p class = "subtitle">Son los elementos que ayudan a estructurar contenido <em>HTML</em></p>
+        <h2 class = "subtitle">MODELO DE CAJAS</h2>
+        <p class = "subtitle">Cada elemento de un documento se considera una caja. CSS determina el tamaño, posicion y propiedades(color, fondo, el ancho del borde, etc).</p>
     </section>
+    
+    <table> 
+        <thead>
+            <tr>    
+                <th>Partes </th>
+                <th>Descripcion </th>
+                <th>Propiedades </th>
+                <th>Documentacion </th>
+            </tr>
+        </thead>
+        <tbody>           
+            <tr>
+                <td class = "element" rowspan="4">Contenido</td>
+                <td rowspan="4">Área donde se encuentra el contenido del elemento(texto, imagen, etc)</td>
+                <td>min-width</td>
+                <td rowspan="2"><a href="https://www.w3schools.com/cssref/pr_dim_width.asp" target="_blank">width</a></td>
+            </tr>
+            <tr><td>max-width</td></tr>
+            <tr>
+                <td>min-height</td>
+                <td rowspan="2"><a href="https://www.w3schools.com/cssref/pr_dim_height.asp" target="_blank">height</a></td>
+            </tr>
+            <tr><td>max-height</td></tr>
+
+            <tr>
+                <td class = "element" rowspan="4">Relleno</td>
+                <td rowspan="4">Es el área de relleno del elemento.</td>
+                <td>padding-top</td>
+                <td rowspan="4"><a href="https://www.w3schools.com/css/css_padding.asp">padding</a></td>
+            </tr>
+            <tr><td>padding-right</td></tr>
+            <tr><td>padding-bottom</td></tr>
+            <tr><td>padding-left</td></tr>
+
+            <tr>
+                <td class = "element" rowspan="3">Borde</td>
+                <td rowspan="3">Es el borde del elemento.</td>
+                <td>border-width</td>
+                <td rowspan="3"><a href="https://www.w3schools.com/css/css_border.asp" target="_blank">border</a></td>
+            </tr>
+            <tr><td>border-style</td></tr>
+            <tr><td>border-color</td></tr>
+
+            <tr>
+                <td class = "element" rowspan="4">Margen</td>
+                <td rowspan="4">Es el margen del elemento.</td>
+                <td>margin-top</td>
+                <td rowspan="4"><a href="https://www.w3schools.com/css/css_margin.asp" target="_blank">margin</a></td>
+            </tr>
+            <tr>
+                <td>margin-right</td>
+            </tr>
+            <tr>
+                <td>margin-bottom</td>
+            </tr>
+            <tr>
+                <td>margin-left</td>
+            </tr>     
+
+        </tbody>
+    </table>
 
     <footer>
         <address>

@@ -34,6 +34,7 @@ header{
     transition: 0.5s;
     z-index: 10;
     background: #84bbcf8c;
+    box-shadow: 0 4px 25px -22px black;
 }
 header.abajo{
     background: rgba(45, 107, 201, 0.507);
@@ -73,7 +74,7 @@ body{
     height: 60%;
 }
 .go{
-    color: white;
+    color: whitesmoke;
     cursor: pointer;
     font-weight: 600;
     margin: 0 1rem;
